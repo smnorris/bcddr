@@ -1,8 +1,17 @@
 # Drainage Density Ruggedness (DDR)
 
-Melton, 1957: the dimensionless product of drainage density (stream length per unit area – km/km2) and total elevation relief.
+> The dimensionless product of drainage density (stream length per unit area – km/km2) and total elevation relief.
 
-Schumm, 1956: the difference between the highest and lowest points in the watershed, relative to watershed length (in km).
+— Melton, 1957
+
+> The difference between the highest and lowest points in the watershed, relative to watershed length (in km).
+
+— Schumm, 1956
+
+
+> The potential for rapid runoff delivery to and through streams, which may contribute to harmful flood events 
+
+— Patton and Baker, 1976
 
 DDR is binned into 3 classes:
 
@@ -10,7 +19,7 @@ DDR is binned into 3 classes:
 2. 2000-4000
 3. greater than 4000
  
-Drainage density ruggedness indicates the potential for rapid runoff delivery to and through streams, which may contribute to harmful flood events (Patton and Baker, 1976).
+
 
 ## Requirements
 
@@ -20,7 +29,7 @@ Drainage density ruggedness indicates the potential for rapid runoff delivery to
 
 ## Processing
 
-	./ddr.sh > ddr.csv
+	./ddr.sh
 
 ## Output
 

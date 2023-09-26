@@ -36,4 +36,4 @@ parallel --no-run-if-empty \
     $PSQL -c \"\copy temp.fwa_assessment_watersheds_relief FROM STDIN delimiter ',' csv\"" ::: $WSGS
 
 # calculate ddr
-$PSQL --csv -f sql/ddr.sql
+$PSQL --csv -f sql/ddr.sql > ddr.csv

@@ -38,7 +38,7 @@ select
   stream_length_km,
   watershed_area_km2,
   round(drainage_density::numeric, 4) as drainage_density,
-  a.drainage_density * elevation_relief as drainage_density_ruggedness,
+  round((a.drainage_density * elevation_relief)::numeric, 4) as drainage_density_ruggedness,
   case
     when drainage_density * elevation_relief < 2000 then 1
     when drainage_density * elevation_relief >= 2000 and
