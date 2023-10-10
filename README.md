@@ -34,7 +34,7 @@
 
 ## Requirements
 
-- BC FWA loaded to postgres database defined by `$DATABASE_URL` via `fwapg`
+- BC FWA loaded to postgres database defined by `$DATABASE_URL` via [`fwapg`](https://github.com/smnorris/fwapg)
 - `jq`, `parallel`
 - BC DEM
 
