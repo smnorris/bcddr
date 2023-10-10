@@ -43,8 +43,7 @@ DDR is binned into 3 classes:
 | `elevation_relief`             | The elevation relief in the watershed (m)                  |
 | `stream_length_km`             | Length of stream in the watershed (km)                     |
 | `watershed_area_km2`           | Area of the watershed (km2)                                |
-| `stream_density`               | Total length of streams / total area of watershed (km/km2) |
+| `drainage_density`             | Total length of streams / total area of watershed (km/km2) |
 | `drainage_density_ruggedness`  | Stream density as a function of relief (km of streams / km2 of watershed) * relief |
 | `drainage_dens_rugged_cls_num` | Numeric classification of DDR: (1: <2000; 2: 2000-4000; 3: >= 4000) |
-
 
