@@ -1,7 +1,6 @@
 #!/bin/bash
 set -euxo pipefail
 
-DATABASE_URL=postgresql://postgres@localhost:5432/bcfishpass_dev
 PSQL="psql $DATABASE_URL -v ON_ERROR_STOP=1"
 WSGS=$($PSQL -AXt -c "SELECT watershed_group_code FROM whse_basemapping.fwa_watershed_groups_poly order by watershed_group_code")
 DEM=~/data/bc/raster/dem/bc_dem.tif
