@@ -13,16 +13,24 @@
 
 — Patton and Baker, 1976
 
-DDR is binned into 3 classes:
-
-1. less than 2000 km/km2
-2. 2000-4000
-3. greater than 4000
  
-Streams included in the drainage density calculation are:
+## Method
 
-- FWA river polygon centerlines 
-- FWA primary/secondary flow lines (ie, `edge_type IN (1000,1100,2000,2300)` and not within a lake/reservoir/wetland waterbody)
+1. Generate relief for [BC FWA Assessment Watersheds](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-assessment-watersheds) by overlaying with the BC 1:20k DEM
+
+2. Calculate drainage density per watershed polygon (km of streams / km2 of watershed) using this definition of 'stream':
+
+	- FWA river polygon centerlines 
+	- FWA primary/secondary flow lines (ie, `edge_type IN (1000,1100,2000,2300)` and not within a lake/reservoir/wetland waterbody)
+
+3. Calculate DDR as  drainage density * relief
+
+4. Classify DDR:
+
+	- class 1: less than 2000 km/km2
+	- class 2: 2000-4000 km/km2
+	- class 3: greater than 4000 km/km2
+
 
 ## Requirements
 
