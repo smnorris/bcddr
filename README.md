@@ -19,7 +19,10 @@ DDR is binned into 3 classes:
 2. 2000-4000
 3. greater than 4000
  
+Streams included in the drainage density calculation are:
 
+- FWA river polygon centerlines 
+- FWA primary/secondary flow lines (ie, `edge_type IN (1000,1100,2000,2300)` and not within a lake/reservoir/wetland waterbody)
 
 ## Requirements
 
