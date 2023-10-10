@@ -1,4 +1,5 @@
 -- calculate ddr
+create table temp.ddr as
 with stream_length as (
   select
     w.watershed_feature_id,
